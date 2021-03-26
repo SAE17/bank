@@ -1,0 +1,11 @@
+package stats
+
+import "github.com/SAE17/bank/pkg/bank/types"
+
+func Avg(payments []types.Payment) types.Money {
+	sum := types.Money(0)
+	for _, payment := range payments {
+		sum += payment.Amount
+	}
+	return sum / types.Money((len(payments)))
+}
