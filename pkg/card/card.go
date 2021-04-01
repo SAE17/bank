@@ -1,6 +1,6 @@
 package card
 
-import "github.com/SAE17/bank/pkg/bank/types"
+import "github.com/SAE17/bank/pkg/types"
 
 func Withdraw(card types.Card, amount int64) types.Card {
 	if !card.Active {
