@@ -22,14 +22,13 @@ type PAN string
 // Card представляет информацию о платежной карте
 
 type Card struct {
-	ID         int
-	PAN        PAN
-	Balance    int64
-	Currency   Currency
-	Color      string
-	Name       string
-	Active     bool
-	MinBalance int64
+	ID       int
+	PAN      PAN
+	Balance  int64
+	Currency Currency
+	Color    string
+	Name     string
+	Active   bool
 }
 
 type Payment struct {
