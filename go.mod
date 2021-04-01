@@ -1,3 +1,3 @@
-module github.com/SAE17/bank/v2
+module github.com/SAE17/bank
 
 go 1.16
