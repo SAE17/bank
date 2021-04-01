@@ -19,6 +19,14 @@ const (
 // PAN представляет номер карты
 type PAN string
 
+type Status string
+
+const (
+	StatusOk         Status = "OK"
+	StatusFail       Status = "FAIL"
+	StatusInProgress Status = "INPROGRESS"
+)
+
 // Card представляет информацию о платежной карте
 
 type Card struct {
@@ -35,6 +43,7 @@ type Payment struct {
 	ID       int
 	Amount   Money
 	Category Category
+	Status   Status
 }
 
 type PaymentSource struct {
