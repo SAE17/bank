@@ -13,6 +13,7 @@ const (
 	TJS Currency = "TJS"
 	RUB Currency = "RUB"
 	USD Currency = "USD"
+	EUR Currency = "EUR"
 )
 
 // PAN представляет номер карты
