@@ -39,11 +39,17 @@ type Card struct {
 	Active   bool
 }
 
+type Service struct {
+	ID   int64
+	Name string
+}
+
 type Payment struct {
 	ID       int
 	Amount   Money
 	Category Category
 	Status   Status
+	Service  Service
 }
 
 type PaymentSource struct {
